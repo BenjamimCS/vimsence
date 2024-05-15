@@ -240,7 +240,7 @@ def get_filetype():
     :returns: string
     '''
 
-    return vim.eval('&filetype')
+    return vim.eval('&filetype') if vim.eval('&filetype') else 'text'
 
 
 def get_extension():
