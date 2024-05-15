@@ -167,7 +167,7 @@ def update_presence():
     elif is_writable() and filename:
         # if none of the other match, check if the buffer is writeable. If it is,
         # assume it's a file and continue.
-        large_image = 'none'
+        large_image = 'txt'
 
         large_text = editing_text.format(
             filetype if filetype else 'Unknown' if not get_extension() else get_extension()
