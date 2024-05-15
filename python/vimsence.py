@@ -20,7 +20,7 @@ if vim.eval('exists("g:vimsence_small_image")') == '1':
 
 start_time = int(time.time())
 base_activity = {
-    'details': 'Nothing',
+    'details': 'Idle',
     'timestamps': {
         'start': start_time
     },
@@ -173,9 +173,9 @@ def update_presence():
             filetype if filetype else 'Unknown' if not get_extension() else get_extension()
         )
     else:
-        large_image = 'none'
-        large_text = 'Nothing'
-        details = 'Nothing'
+        large_image = 'idle'
+        large_text = 'Idling'
+        details = 'Idle'
 
     # Update the activity
     activity['assets']['large_image'] = large_image
